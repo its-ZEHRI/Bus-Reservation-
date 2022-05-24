@@ -1,0 +1,120 @@
+/* Why choose us Section */
+.why-us-section {
+    background-color: rgb(241, 240, 240);
+    max-width: 100%;
+}
+
+.why-us-wrapper {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    padding: 4rem 0;
+}
+
+/* Column 1 */
+.why-us-wrapper .col-1 {
+    width: 40%;
+    margin-right: 6rem;
+}
+
+.why-us-wrapper .col-1>h1 {
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.why-us-wrapper .col-1>p {
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: var(--darkgray-color);
+
+}
+
+
+.why-us-wrapper .row {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem 1rem 0;
+    margin-bottom: .5rem;
+}
+
+.why-us-wrapper .row .icon-wrapper {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-right: 1.5rem;
+    box-shadow: var(--lightshadow);
+    border-radius: var(--radius);
+    min-width: 4.4rem;
+}
+
+.why-us-wrapper .row .icon-wrapper i {
+    color: var(--lightblue-color);
+    font-size: 1.7rem;
+}
+
+.why-us-wrapper .row .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.why-us-wrapper .row .content-wrapper h3 {
+    margin-bottom: .4rem;
+    letter-spacing: 1px;
+}
+
+.why-us-wrapper .row .content-wrapper p {
+    font-size: .8rem;
+    color: gray;
+    font-weight: 600;
+    line-height: 15px;
+    text-transform: capitalize;
+}
+
+.col-1 .book-btn-sm {
+    display: inline-block;
+    padding: 1rem;
+    background-color: var(--lightblue-color);
+    margin-top: 1.5rem;
+}
+
+.col-1 .book-btn-sm:hover {
+    background-color: var(--lightblue-hover);
+}
+
+/* Col 2 */
+.why-us-section .why-us-wrapper .col-2 {
+    background: url(../images/Why-choose-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 30rem;
+    border-radius: 2rem;
+}
+
+@media screen and (max-width:765px) {
+    .why-us-wrapper {
+        flex-direction: column;
+    }
+
+    .why-us-wrapper .col-1 {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .why-us-wrapper .col-1>h1 {
+        font-size: 2rem;
+    }
+
+    .why-us-section .why-us-wrapper .col-2 {
+        width: 100%;
+    }
+}

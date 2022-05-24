@@ -1,0 +1,79 @@
+/* Guidline Section */
+.guideline-section {
+    padding: 5rem 0;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+.guideline_wrapper {
+    width: var(--width);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.guideline_wrapper>div>h1 {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 38px;
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+}
+
+.guideline-boxes-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+}
+
+.guideline-box {
+    color: white;
+    padding: 1.5rem;
+    border-radius: var(--radius);
+}
+
+.guideline-box i {
+    font-size: 1.7rem;
+    padding: .6rem;
+    background-color: white;
+    border-radius: var(--radius);
+    margin-bottom: 1rem;
+}
+
+.guideline-box h4 {
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+
+
+.guideline-1 {
+    background-color: var(--lightyellow-color);
+}
+
+.guideline-1 i {
+    color: var(--lightyellow-color);
+}
+
+.guideline-2 {
+    background-color: var(--success-color);
+}
+
+.guideline-2 i {
+    color: var(--success-color);
+}
+
+.guideline-3 {
+    background-color: var(--lightblue-color);
+}
+
+.guideline-3 i {
+    color: var(--lightblue-color);
+}
+
+@media screen and (max-width:765px) {
+    .guideline-boxes-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

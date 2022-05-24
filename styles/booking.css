@@ -1,0 +1,161 @@
+body {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.623)), url(../images/main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+}
+
+.booking-section {
+    padding: 5rem 0;
+    font-family: var(--primary-font);
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.booking-form {
+    box-sizing: border-box;
+    padding: 1.5rem;
+    width: 40%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    border-radius: 10px;
+    border: 1px solid var(--lightblue-color);
+}
+
+.booking-desc {
+    width: 60%;
+    padding-left: 7rem;
+    float: right;
+}
+
+.booking-desc>h1 {
+    margin-bottom: .4rem;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.booking-desc>p {
+    margin-bottom: 5rem;
+}
+
+div.elem-group {
+    margin: 20px 0;
+}
+
+div.elem-group.inlined {
+    width: 49%;
+    display: inline-block;
+    float: left;
+    margin-left: 1%;
+}
+
+label {
+    display: block;
+    padding-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+input,
+select {
+    outline: none;
+    border-radius: 2px;
+    border: 2px solid var(--lightgray2-color);
+    box-sizing: border-box;
+    font-size: 1rem;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--lightgray2-color);
+}
+
+div.elem-group.inlined input {
+    width: 95%;
+    display: inline-block;
+}
+
+hr {
+    border: 1px dotted #ccc;
+}
+
+button {
+    height: 50px;
+    background: var(--lightblue-color);
+    border: none;
+    color: white;
+    font-size: 1.25em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s all linear;
+    padding: 0 14px;
+}
+
+button:hover {
+    background-color: var(--lightblue-hover);
+}
+
+.back-btn-wrap {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    display: inline-block;
+    text-align: center;
+    padding-top: .5rem;
+}
+
+.back-btn-wrap i {
+    padding: 0 5px;
+    color: var(--lightblue-color);
+}
+
+.back-btn {
+    text-decoration: none;
+    color: var(--lightblue-color);
+    border-radius: 5px;
+    font-size: .8rem;
+}
+
+@media screen and (max-width:900px) {
+
+    .booking-section {
+        flex-direction: column-reverse;
+        width: 95%;
+    }
+
+    .booking-form {
+        width: 100%;
+    }
+
+    .booking-desc {
+        width: 100%;
+        padding-left: 0;
+        float: none;
+    }
+
+    div.elem-group.inlined {
+        width: 100%;
+    }
+
+
+
+    div.elem-group.inlined input {
+        width: 100%;
+    }
+
+
+    button {
+        height: 50px;
+        width: 100%;
+        padding: 0 0;
+    }
+}
